@@ -1,0 +1,5 @@
+docker run --name stat-db -e MYSQL_ROOT_PASSWORD=charlotte -d mysql:latest
+docker run -it --network some-network --rm mysql mysql -hstat-db -uexample-user -p
+
+docker exec -it [container_name] mysql -uroot -p
+
